@@ -6,6 +6,7 @@ class Header {
 
   buildNav() {
     const nav = document.createElement('nav');
+    nav.classList.add('nav-bar');
     nav.appendChild(this.buildNavItems());
     return nav;
   }
@@ -17,11 +18,12 @@ class Header {
     let li;
     let hRef;
     let ul = document.createElement('ul');
+    ul.classList.add('nav-items-container');
     this.dataSetItems.forEach((element) => {
       li = document.createElement('li');
       hRef = document.createElement('a');
       hRef.setAttribute('href', '#');
-      hRef.setAttribute('class', 'link');
+      hRef.classList.add('link');
       hRef.textContent = element;
       li.appendChild(hRef);
       ul.appendChild(li);

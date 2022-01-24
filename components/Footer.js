@@ -5,7 +5,7 @@ class Footer {
 
   buildFooter() {
     const paragraph = document.createElement('p');
-    paragraph.textContent = 'Made By Smaragda with Vanilla JavaScript';
+    paragraph.textContent = 'Made By Smaragda K. with Vanilla JavaScript';
     this.rootElm.appendChild(paragraph);
   }
 }
